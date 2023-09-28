@@ -1,0 +1,15 @@
+a,b,n=map(int,input().split())
+if a==b:
+    print("=")
+elif n%2==0:
+    if a==-b:
+        print("=")
+    elif abs(a)>abs(b):
+        print(">")
+    else:
+        print("<")
+else:
+    if a>b:
+        print(">")
+    else:
+        print("<")
