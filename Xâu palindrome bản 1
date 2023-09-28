@@ -1,0 +1,44 @@
+#vì nhập vô hạn (hoặc không) nên dùng while True hoặc 2 vì tui thích thế
+while 2:
+    try:
+#nhập vào xâu nè
+        s=input()
+#cho chúng sinh bình đẳng bằng cách cho tất cả chúng nó thành chữ thường (hoặc hoa) đều được
+        s = s.lower()
+#r : độ dài của xâu nhưng khi nó trừ 1 trở thành vị trí cuối cùng của xâu
+        r = len(s) - 1
+        l = 0
+#xử lý kí tự không phải là chữ cái ở bên phải
+        while 2:
+            if s[r].isalpha():
+                break
+            else:
+                r-=1
+#biến kiểm tra ,  không có nó thì tui ăn cớt
+        c = 1
+#trong lúc l  (lúc này bằng 0) 
+        while l <= r:
+#xử lý kí tự không phải chữ cái nà (2)
+            while 2:
+                if s[l].isalpha():
+                    break
+                else:
+                    l+=1
+            while 2:
+                if s[r].isalpha():
+                    break
+                else:
+                    r-=1
+#xử lý xong rồi thì so sánh xem chúng nó có giống nhau không, nếu không hả? ngừng chương trình
+            if s[l]!=s[r]:
+                c=0
+                break
+            l += 1
+            r -= 1
+        if (c):
+            print("Yes")
+        else:
+            print("No")
+
+    except:
+        break
