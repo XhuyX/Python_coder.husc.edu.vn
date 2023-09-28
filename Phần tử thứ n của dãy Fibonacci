@@ -1,4 +1,4 @@
-tạo ra ma trận cho số fibo
+#tạo ra ma trận cho số fibo
 A=[[1,1],[1,0]]
 def nhan(A,B):
     C= [[0,0],[0,0]]
