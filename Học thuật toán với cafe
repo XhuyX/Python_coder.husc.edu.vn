@@ -1,0 +1,13 @@
+n=int(input())
+s=input()
+time=c=l=0
+while l<=len(s)-1:
+    if s[l]=='1':
+        c=2
+        time +=1
+    else:
+        if c>0:
+            c-=1
+            time +=1
+    l+=1
+print(time)
