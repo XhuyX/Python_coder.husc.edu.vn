@@ -1,0 +1,11 @@
+from math import *
+tol=0
+for i in range(19,int(input())+1):
+    s=0
+    x=i
+    while i:
+        s+=factorial(i%10)
+        i//=10
+    if s%x==0:
+        tol+=x
+print(tol)
