@@ -1,0 +1,8 @@
+for _ in range (int(input())):
+    n=int(input())
+    a,b,c,d=1,n*n,n,n*(n-1)+1
+    if (n%2==0):
+        print((n*(a+b)//2 + n*(c+d)//2)%(10**9+7))
+    else:
+        xd= n*n //2+1
+        print((n*(a+b)//2 + n*(c+d)//2 -xd)%(10**9+7))
