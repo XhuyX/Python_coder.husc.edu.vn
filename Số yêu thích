@@ -1,0 +1,21 @@
+from math import *
+for _ in range (int (input())):
+    n=int(input())
+    A=[]
+    for i in range(1,isqrt(n)+1):
+        if n%i==0:
+            if (i%2==0 and n//i%2==0) or (i%2==1 and n//i%2==1):
+                if i!=n//i:
+                    x= (n//i - i) //2
+                    A.append(x*x)
+                    A.append(-(n+x*x))
+    for i in range (1,int(n**0.5)+1):
+        a= n - i*i
+        if int(sqrt(a))==sqrt(a) and a!=0 and a!= i*i:
+            A.append(-i*i)
+    if n%2==0:
+        n//=2
+        if int(sqrt(n))==sqrt(n):
+            A.append(-n)
+    print(len(A))
+    print(*sorted(A),sep=' ')
