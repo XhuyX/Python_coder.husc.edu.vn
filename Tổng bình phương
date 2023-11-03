@@ -1,0 +1,5 @@
+from math import *
+a,b=map(float,input().split())
+a=ceil(a)-1
+b=floor(b)
+print((((b*(b+1)*(b*2+1))//6) - ((a*(a+1)*(a*2+1))//6))%(10**9+7))
