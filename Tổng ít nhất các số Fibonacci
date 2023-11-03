@@ -1,0 +1,17 @@
+fibo=[0,1,1]
+a=[]
+for z in range(3,47):
+    fibo.append(fibo[z-1]+ fibo[z-2])
+n=int(input())
+z=n
+print(n,'=',end=' ')
+for x in range (46,1,-1):
+    if z< fibo[x]:
+        continue
+    else:
+        z-=fibo[x]
+        print(fibo[x],end=' ')
+        if z!=0:
+            print("+",end=' ')
+        if z==0:
+            break
